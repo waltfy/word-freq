@@ -4,6 +4,7 @@ var wf = require('../');
 t('tokenisation test with a simple string', function (t) {
 
 	var str = "you're simply a test, a mere test";
+	var strAlt = "you're simply a simplistic house, made for housing";
 
 	t.deepEqual(
 		wf.tokenise(str),
@@ -12,8 +13,8 @@ t('tokenisation test with a simple string', function (t) {
 	);
 
 	t.deepEqual(
-		wf.stem(str),
-		['you', 're', 'simpli', 'a', 'test', 'a', 'mere', 'test'],
+		wf.stem(strAlt),
+		[ "you", "re", "simpli", "a", "simplist", "hous", "made", "for", "hous" ],
 		'stemmer behaves as expected'	
 	);
 
