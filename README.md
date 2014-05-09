@@ -45,7 +45,7 @@ var tokenised = wf.tokenise(str);
 ### Stemming (`wf.stem(text)`)
 Returns an array of terms, stemmed and without punctuation.
 
-Note: This is basically a wrapper around the [`stem-porter`](https://www.npmjs.org/package/stem-porter) library by [`kastor`](https://www.npmjs.org/~kastor)
+Note: This is basically a wrapper around the [`stem-porter`](https://www.npmjs.org/package/stem-porter) library by [`kastor`](https://www.npmjs.org/~kastor).
 
 ```javascript
 var wf = require('word-freq');
