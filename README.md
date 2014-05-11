@@ -6,8 +6,12 @@ Calculates the word frequency of a text document, by tokenising or tokenising an
 
 ## Usage
 
-### Frequency (`wf.freq(text, shouldStem)`)
-Returns an object containing the frequency of terms in the `text` provided. `shouldStem` defaults to `true`.
+### Frequency (`wf.freq(text, noStopWords, shouldStem)`)
+Returns an object containing the frequency of terms in the `text` provided.
+
+* `noStopWords` defaults to `true`. Set to `false` if you want to include stop words–e.g words such as "I" and "the".
+* `shouldStem` defaults to `true`. Set to `false` if you want words not to be stemmed.
+ 
 ```javascript
 var str = "@waltercfilho tweeted about houses: housing is the most expensive thing ever f#!*. How expensive is moving house?";
 
@@ -28,7 +32,6 @@ var frequency = wf.freq(str); // shouldStem -> `true`
       "move" : 1
     }
 ```
-
 
 ### Tokenising (`wf.tokenise(text)`)
 Simply returns an array of terms, without punctuation.
