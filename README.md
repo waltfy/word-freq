@@ -52,7 +52,6 @@ var wf = require('word-freq');
 
 var str = "you're simply a simplistic house, made for housing";
 var tokenised = wf.stem(str);
-
-[ "you", "re", "simpli", "a", "simplist", "hous", "made", "for", "hous" ],
+>> [ "you", "re", "simpli", "a", "simplist", "hous", "made", "for", "hous" ],
 ```
 
