@@ -13,23 +13,14 @@ Returns an object containing the frequency of terms in the `text` provided.
 * `shouldStem` defaults to `true`. Set to `false` if you want words not to be stemmed.
  
 ```javascript
-var str = "@waltercfilho tweeted about houses: housing is the most expensive thing ever f#!*. How expensive is moving house?";
+var str = "@waltercfilho tweeted about houses: housing is the most expensive thing ever f#!*";
 
 var frequency = wf.freq(str); // shouldStem -> `true`
->> {  
+>> {
       "waltercfilho" : 1,
       "tweet" : 1,
-      "about" : 1,
-      "hous" : 3,
-      "is" : 2,
-      "the" : 1,
-      "most" : 1,
-      "expens" : 2,
-      "thing" : 1,
-      "ever" : 1,
-      "f" : 1,
-      "How" : 1,
-      "move" : 1
+      "hous" : 2,
+      "expens" : 1
     }
 ```
 
@@ -44,7 +35,7 @@ var wf = require('word-freq');
 
 var str = "you're simply a test, a mere test";
 var tokenised = wf.tokenise(str);
->> ['you', 're', 'simply', 'a', 'test', 'a', 'mere', 'test']
+>> ['simply', 'test', 'mere', 'test']
 
 ```
 
@@ -61,6 +52,6 @@ var wf = require('word-freq');
 
 var str = "you're simply a simplistic house, made for housing";
 var tokenised = wf.stem(str);
->> [ "you", "re", "simpli", "a", "simplist", "hous", "made", "for", "hous" ],
+>> ["simpli", "simplist", "hous", "hous"]
 ```
 
