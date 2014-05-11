@@ -4,6 +4,11 @@ word-freq
 
 Calculates the word frequency of a text document, by tokenising or tokenising and stemming the string.
 
+## Version
+* `0.0.3` Added stop words removal feature.
+* `0.0.2` Improved, added testing.
+* `0.0.1` Release.
+
 ## Usage
 
 ### Frequency (`wf.freq(text, noStopWords, shouldStem)`)
