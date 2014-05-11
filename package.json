@@ -1,6 +1,6 @@
 {
   "name": "word-freq",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Calculates the word frequency of a text document.",
   "main": "index.js",
   "scripts": {

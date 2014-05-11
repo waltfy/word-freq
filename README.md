@@ -8,7 +8,7 @@ Calculates the word frequency of a text document, by tokenising or tokenising an
 
 ### Frequency (`wf.freq(text, noStopWords, shouldStem)`)
 Returns an object containing the frequency of terms in the `text` provided.
-* `text` is the string (text document) in which the calculations are to be performed.
+* `text` is the string (text document) in which the calculations are to be performed on.
 * `noStopWords` defaults to `true`. Set to `false` if you want to include stop words–e.g words such as "I" and "the".
 * `shouldStem` defaults to `true`. Set to `false` if you want words not to be stemmed.
  
@@ -27,7 +27,7 @@ var frequency = wf.freq(str); // shouldStem -> `true`
 ### Tokenising (`wf.tokenise(text, noStopWords)`)
 Simply returns an array of terms, without punctuation.
 
-* `text` is the string (text document) in which the calculations are to be performed.
+* `text` is the string (text document) in which the calculations are to be performed on.
 * `noStopWords` defaults to `true`. Set to `false` if you want to include stop words–e.g words such as "I" and "the".
 
 ```javascript
@@ -42,7 +42,7 @@ var tokenised = wf.tokenise(str);
 ### Stemming (`wf.stem(text, noStopWords)`)
 Returns an array of terms, stemmed and without punctuation.
 
-* `text` is the string (text document) in which the calculations are to be performed.
+* `text` is the string (text document) in which the calculations are to be performed on.
 * `noStopWords` defaults to `true`. Set to `false` if you want to include stop words–e.g words such as "I" and "the".
 
 Note: This is basically a wrapper around the [`stem-porter`](https://www.npmjs.org/package/stem-porter) library by [`kastor`](https://www.npmjs.org/~kastor).
