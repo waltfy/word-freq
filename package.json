@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/waltervascarvalho/word-freq",
   "dependencies": {
-    "stem-porter": "0.0.1"
+    "stem-porter": "0.0.1",
+    "stopwords": "0.0.4"
   },
   "devDependencies": {
     "tap": "^0.4.9"
