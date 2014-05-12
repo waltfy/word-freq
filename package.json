@@ -1,6 +1,6 @@
 {
   "name": "word-freq",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Calculates the word frequency of a text document.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/waltervascarvalho/word-freq",
   "dependencies": {
-    "stem-porter": "0.0.1",
     "stm": "0.0.1"
   },
   "devDependencies": {
