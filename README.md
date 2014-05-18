@@ -5,6 +5,7 @@ word-freq
 Calculates the word frequency of a text document, by tokenising or tokenising and stemming the string.
 
 ## Version
+* `0.0.8` `package.json` dependencies best practices.
 * `0.0.7` Converts all text to lowercase. 
 * `0.0.6` Messed up `npm` versioning.
 * `0.0.5` Moved stemmer into its own [module](https://github.com/waltervascarvalho/stm). Removed direct dependency on tokeniser.
