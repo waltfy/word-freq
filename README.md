@@ -2,6 +2,8 @@ word-freq
 =========
 [![Build Status](https://travis-ci.org/waltervascarvalho/word-freq.svg?branch=master)](https://travis-ci.org/waltervascarvalho/word-freq)
 
+[![Gitter chat](https://badges.gitter.im/waltervascarvalho/word-freq.png)](https://gitter.im/waltervascarvalho/word-freq)
+
 Calculates the word frequency of a text document, by tokenising or tokenising and stemming the string.
 
 ## Version
